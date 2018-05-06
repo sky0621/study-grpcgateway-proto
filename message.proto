@@ -15,8 +15,7 @@ message EchoResponse {
 service EchoService {
     rpc Echo(EchoRequest) returns (EchoResponse) {
         option (google.api.http) = {
-            post: "/v1/sample/echo"
-            body: "*"
+            get: "/v1/sample/echo"
         };
     }
 }
